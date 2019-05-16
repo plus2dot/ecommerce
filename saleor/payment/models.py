@@ -189,5 +189,3 @@ class Transaction(models.Model):
         return 'Transaction(type=%s, is_success=%s, created=%s)' % (
             self.kind, self.is_success, self.created)
 
-    def get_amount(self):
-        return Money(self.amount, self.currency or settings.DEFAULT_CURRENCY)
