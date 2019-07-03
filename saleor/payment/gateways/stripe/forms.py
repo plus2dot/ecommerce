@@ -1,5 +1,3 @@
-
-
 from .utils import get_amount_for_stripe
 
 CHECKOUT_SCRIPT_URL = 'https://checkout.stripe.com/checkout.js'
