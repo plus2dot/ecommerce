@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 aws s3 cp /tmp/$ZIP s3://$VERSIONS_BUCKET/$ZIP
 
 aws elasticbeanstalk create-application-version --application-name saleor-demo \
