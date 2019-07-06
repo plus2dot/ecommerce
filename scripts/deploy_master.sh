@@ -1,10 +1,6 @@
 #!/bin/bash
 
-VERSION=$CIRCLE_SHA1
-ZIP=$VERSION.zip
 
-cd deployment/elasticbeanstalk
-zip -r /tmp/$ZIP .
 
 aws s3 cp /tmp/$ZIP s3://$VERSIONS_BUCKET/$ZIP
 
